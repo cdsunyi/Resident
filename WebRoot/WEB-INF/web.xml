@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <servlet>
+    <servlet-name>userqueryservlet</servlet-name>
+    <servlet-class>dao.userqueryservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>userqueryservlet</servlet-name>
+    <url-pattern>/userqueryservlet.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>branchjson</servlet-name>
+    <servlet-class>dao.branchjson</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>branchjson</servlet-name>
+    <url-pattern>/branchjson.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>userupdateresident</servlet-name>
+    <servlet-class>dao.userUpdateResident</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>userupdateresident</servlet-name>
+    <url-pattern>/userupdateresident.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>addcontrolpersoninfo</servlet-name>
+    <servlet-class>dao.addcontrolpersoninfo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addcontrolpersoninfo</servlet-name>
+    <url-pattern>/addcontrolpersoninfo.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ExportExcel</servlet-name>
+    <servlet-class>dao.ExportExcel</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ExportExcel</servlet-name>
+    <url-pattern>/ExportExcel.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>userRemoveInfo</servlet-name>
+    <servlet-class>dao.userRemoveInfo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>userRemoveInfo</servlet-name>
+    <url-pattern>/userRemoveInfo.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ResidentSerach</servlet-name>
+    <servlet-class>dao.ResidentSerach</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ResidentSerach</servlet-name>
+    <url-pattern>/ResidentSerach.do</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
